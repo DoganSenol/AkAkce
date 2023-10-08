@@ -45,6 +45,16 @@ public class DialogContent extends Parent {
     public WebElement CreateAccountButton;
     @FindBy(xpath = "(//a[@rel='nofollow'])[1]")
     public WebElement verify;
+    @FindBy(xpath = " (//a[@rel='nofollow'])[2]")
+    public WebElement loginLink;
+    @FindBy(xpath = "//input[@id='life']")
+    public WebElement loginEmail;
+    @FindBy(xpath = "//input[@id='lifp']")
+    public WebElement loginPassword;
+    @FindBy(xpath = "//input[@id='lfb']")
+    public WebElement loginButton;
+
+
 
 
 
@@ -69,6 +79,13 @@ public class DialogContent extends Parent {
             case "IAgree": return this.IAgree;
             case "CreateAccountButton": return this.CreateAccountButton;
             case "verify": return this.verify;
+            case "loginLink": return this.loginLink;
+            case "loginEmail": return this.loginEmail;
+            case "loginPassword": return this.loginPassword;
+            case "loginButton": return this.loginButton;
+
+
+
 
 
 

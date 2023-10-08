@@ -16,7 +16,8 @@ import java.util.Random;
 
 public class CreateANewAccountSteps {
 
-    DialogContent dc=new DialogContent();
+    DialogContent dc = new DialogContent();
+
     @Given("Navigate To AkAkce")
     public void navigateToAkAkce() {
         GWD.getDriver().get("https://www.akakce.com/");
@@ -37,8 +38,8 @@ public class CreateANewAccountSteps {
         dc.mySendkeys(dc.password1Input, "Ab123456");
         dc.mySendkeys(dc.password2Input, "Ab123456");
 
-        int randomPick=Parent.randomSecim(1);
-        WebElement product=dc.GenderChoise.get(randomPick);
+        int randomPick = Parent.randomSecim(1);
+        WebElement product = dc.GenderChoise.get(randomPick);
         dc.myClick(product);
         dc.mySelectIndex(dc.selectCity1, 3);
         dc.mySelectIndex(dc.selectCity2, 4);
@@ -50,10 +51,8 @@ public class CreateANewAccountSteps {
 
 
     }
-
-
     @And("The User Should Create The Account Successfully")
     public void theUserShouldCreateTheAccountSuccessfully() {
         dc.verifyContainsText(dc.verify, "aa");
-    }
-}
+
+}}
