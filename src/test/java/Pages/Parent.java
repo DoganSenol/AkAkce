@@ -57,6 +57,7 @@ public class Parent {
 
     }
 
+
     public void mySelectIndex(WebElement element, int index) { //select element secme Metodu -->selectByIndex<-- yerine
         wait.until(ExpectedConditions.visibilityOfAllElements(element));
         scrollToElemenet(element);                        // selectByValue veya text  kullanilabilir
